@@ -15,13 +15,13 @@ The **Singleton pattern** ensures that a class has **only one instance** and pro
 
 ## 📌 Real-World Examples of Singleton Design Pattern
 
-- ✔ **Database Connection Pool – Manages database connections through a single shared instance.
-- ✔ **Logger – Centralized logging through a single logger instance.
-- ✔ **Configuration Manager – Provides global access to application configuration settings.
-- ✔ **Thread Pool – Controls access to a shared pool of threads.
-- ✔ **Cache – Maintains a single in-memory store for frequently used data.
-- ✔ **Task Manager (OS) – Single instance monitors and manages system processes.
-- ✔ **Spring Boot Beans – Default scope for Spring beans is singleton, ensuring one shared
+- ✔ Database Connection Pool – Manages database connections through a single shared instance.
+- ✔ Logger – Centralized logging through a single logger instance.
+- ✔ Configuration Manager – Provides global access to application configuration settings.
+- ✔ Thread Pool – Controls access to a shared pool of threads.
+- ✔ Cache – Maintains a single in-memory store for frequently used data.
+- ✔ Task Manager (OS) – Single instance monitors and manages system processes.
+- ✔ Spring Boot Beans – Default scope for Spring beans is singleton, ensuring one shared
 
 
 ## 🧠 Best Singleton Approach Based on Use Case
