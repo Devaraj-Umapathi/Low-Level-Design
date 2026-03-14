@@ -1,0 +1,1 @@
+# WithoutStatePattern package

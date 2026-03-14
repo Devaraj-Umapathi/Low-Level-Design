@@ -1,0 +1,1 @@
+# Adapter design pattern - Python
