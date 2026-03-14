@@ -1,0 +1,1 @@
+# Liskov Substitution - without violation

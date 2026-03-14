@@ -1,0 +1,1 @@
+# Interface Segregation - without violation

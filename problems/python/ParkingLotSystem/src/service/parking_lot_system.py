@@ -11,6 +11,8 @@ from strategy.parking.parking_strategy import ParkingStrategy
 from strategy.parking.nearest_first_strategy import NearestFirstStrategy
 from strategy.fee.fee_strategy import FeeStrategy
 from strategy.fee.flat_rate_fee_strategy import FlatRateFeeStrategy
+from factories.payment_factory import PaymentFactory
+from service.payment_service import PaymentService
 
 
 class ParkingLotSystem:
@@ -65,7 +67,10 @@ class ParkingLotSystem:
         ticket.set_end_time_stamp()
         fee = self._fee_strategy.calculate_fee(ticket)
         print(f"Total fee for duration of {ticket.get_duration_in_hours():.2f} hours is: {fee}")
-        # Simplified: assume payment always succeeds
+        payment_strategy = PaymentFactory.get(payment_mode)
+        payment_service = PaymentService(payment_strategy)
+        if not payment_service.pay(ticket, fee):
+            raise ValueError("Payment failed")
         ticket.get_assigned_spot().un_park_vehicle()
         del self._active_tickets[ticket_id]
         print(f"Vehicle exited. Fee charged: ₹{fee}")

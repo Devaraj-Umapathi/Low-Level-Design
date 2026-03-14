@@ -1,0 +1,1 @@
+# FullFactoryPattern package
