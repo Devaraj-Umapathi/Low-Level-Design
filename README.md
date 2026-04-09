@@ -9,7 +9,7 @@ A hands-on repository for **Low-Level Design** fundamentals: UML class diagrams,
 - **UML & class diagrams** — How to model structure and relationships before coding.
 - **SOLID principles** — Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion.
 - **Design patterns** — Creational, structural, and behavioral patterns with code (with/without pattern comparisons where relevant).
-- **Problems** — End-to-end designs (e.g. Parking Lot) that tie together patterns and principles.
+- **Problems** — End-to-end designs (e.g. Parking Lot, Vending Machine, Rate Limiter) that tie together patterns and principles.
 
 ---
 
@@ -66,9 +66,11 @@ Java and Python code live under `design-patterns/java/<pattern>/` and `design-pa
 
 Java and Python implementations live under `problems/java/<problem>/` and `problems/python/<problem>/`.
 
-| Problem          | Java | Python |
-|------------------|------|--------|
+| Problem            | Java | Python |
+|--------------------|------|--------|
 | Parking Lot System | [problems/java/ParkingLotSystem](problems/java/ParkingLotSystem) | [problems/python/ParkingLotSystem](problems/python/ParkingLotSystem) |
+| Vending Machine    | [problems/java/VendingMachineDemo](problems/java/VendingMachineDemo) | [problems/python/VendingMachineDemo](problems/python/VendingMachineDemo) |
+| Rate Limiter       | [problems/java/RateLimiter](problems/java/RateLimiter) | [problems/python/RateLimiter](problems/python/RateLimiter) |
 
 ---
 
@@ -79,9 +81,10 @@ Java and Python implementations live under `problems/java/<problem>/` and `probl
   ```bash
   cd design-patterns/python/Adapter-DesignPattern && PYTHONPATH=. python3 -m src.demo
   ```
-  For problems (e.g. Parking Lot), run from the problem folder with `PYTHONPATH=src`:
+  For problems (e.g. Parking Lot, Rate Limiter), run from the problem folder with `PYTHONPATH=src`:
   ```bash
   cd problems/python/ParkingLotSystem && PYTHONPATH=src python3 src/parking_lot_demo.py
+  cd problems/python/RateLimiter && PYTHONPATH=src python3 src/main.py
   ```
 
 ---
