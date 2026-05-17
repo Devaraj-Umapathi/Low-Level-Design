@@ -71,6 +71,7 @@ Java and Python implementations live under `problems/java/<problem>/` and `probl
 | Parking Lot System | [problems/java/ParkingLotSystem](problems/java/ParkingLotSystem) | [problems/python/ParkingLotSystem](problems/python/ParkingLotSystem) |
 | Vending Machine    | [problems/java/VendingMachineDemo](problems/java/VendingMachineDemo) | [problems/python/VendingMachineDemo](problems/python/VendingMachineDemo) |
 | Rate Limiter       | [problems/java/RateLimiter](problems/java/RateLimiter) | [problems/python/RateLimiter](problems/python/RateLimiter) |
+| Meeting Scheduler  | [problems/java/MeetingScheduler](problems/java/MeetingScheduler) | [problems/python/MeetingScheduler](problems/python/MeetingScheduler) |
 
 ---
 
@@ -85,6 +86,7 @@ Java and Python implementations live under `problems/java/<problem>/` and `probl
   ```bash
   cd problems/python/ParkingLotSystem && PYTHONPATH=src python3 src/parking_lot_demo.py
   cd problems/python/RateLimiter && PYTHONPATH=src python3 src/main.py
+  cd problems/python/MeetingScheduler && PYTHONPATH=src python3 src/main.py
   ```
 
 ---
